@@ -1,0 +1,31 @@
+{
+  "name": "s",
+  "version": "1.0.0",
+  "description": "Api Rest con express y mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "keywords": [
+    "Express",
+    "Mongo",
+    "Server",
+    "Mongoose"
+  ],
+  "author": "Alan Gallardo Peñaloza",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/register": "^7.21.0"
+  }
+}
