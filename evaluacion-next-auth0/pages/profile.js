@@ -19,15 +19,25 @@ export default function Profile(props) {
             <main className={styles.main}>
                 <h1 className={styles.title}>Profile</h1>
 
-                <LoginLogout />
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                        <img src={user.picture} alt="" width={50} height={50} />
+                        <h2>Hola {user.name}</h2>
+                    </div>
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                        <h2>
+                            Email: {user.email}
+                        </h2>
+                    </div>
+                </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
                     <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                        <img src={user.picture} alt="" width={50} height={50}/>
-                        <h2>Hoal {user.nickname}</h2>
+                        <LoginLogout />
                     </div>
-                    <div>Email: {user.email}</div>
                 </div>
+
+
             </main>
 
             <footer className={styles.footer}>
