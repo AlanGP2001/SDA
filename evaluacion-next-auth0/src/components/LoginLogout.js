@@ -16,10 +16,15 @@ const LoginLogout = () => {
   if (user) {
     return (
       <div>
+        <a href="/home">
+          <a>Home</a>
+        </a>
+        <div>
         <p>Conectado como: {user.email}</p>
         <a href="/api/auth/logout">
           <a>Cerrar sesión</a>
         </a>
+        </div>
       </div>
     );
   }
