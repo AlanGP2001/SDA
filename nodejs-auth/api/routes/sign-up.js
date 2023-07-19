@@ -18,7 +18,6 @@ signUp.post(
   }),
   body('password').isLength({ min: 6 }),
 
-  //
   async (request, response) => {
     try {
       const errors = validationResult(request);
@@ -29,7 +28,7 @@ signUp.post(
       const { username, password } = request.body;
 
       const user = await UserModel.create({ username, password });
-
+      //devuelve la información usuario y si fue creado
       return response
         .status(201)
         .json({ username: user.username, createdAt: user.createdAt });

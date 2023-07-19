@@ -1,5 +1,7 @@
 import Mongoose from 'mongoose';
 
+Mongoose.set('strictQuery', false);
+
 const url = process.env.DATABASE_URL;
 
 if (!url) {
